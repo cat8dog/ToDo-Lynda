@@ -42,6 +42,28 @@ class Note: NSObject {
         NSUserDefaults.standardUserDefaults().setObject(aDictionaries, forKey: kAllNotes)
     }
     
+    // New class method for loading the notes
+    class func loadNotes() {
+        // variable created simply to shorten the extended line of code
+        var defaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        // grab data from UserDefaults:
+        var savedData:[NSDictionary]? = defaults.objectForKey(kAllNotes) as? [NSDictionary]// "?" Incase value returns a null.
+        //  Doesn't match the return type of objectForKey, so it will need to be type=cast as an array of dictionaries.
+        // unwrap the data
+        savedData?.count
+        
+        // if statement that checks to see if the saved data is null. If it's not, we'll assign it to a non-optional value.  
+        
+        if let data:[NSDictionary] = savedData {  // if saved data is not null, it will be saved to the constant named 'data'. If it IS null, then the code in the curly braces won't even trigger.
+            for var i:Int = 0; i < data.count; i++ {
+                var n:Note = Note()
+                n.setValuesForKeysWithDictionary(data[i] as [NSObject : AnyObject])
+                allNotes.append(n)
+            }
+        }
+    }
+    
+    
     
     
 }

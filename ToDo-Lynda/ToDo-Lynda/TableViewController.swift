@@ -9,10 +9,19 @@
 import UIKit
 
 class TableViewController: UITableViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // test for checking to see if notes load
+        Note.loadNotes()
+        println("allNotes: \(allNotes)")
+        // create note
+        var n:Note = Note()
+        // add it to the allNotes array
+        allNotes.append(n)
+        Note.saveNotes()
         noteTable = self.tableView
         
         //        var n:Note = Note()
