@@ -13,11 +13,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="vVA-TX-D2l">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="vVA-TX-D2l">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vVA-TX-D2l" id="G97-hc-F8L">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="IJs-e6-EXz" kind="showDetail" identifier="detailView" id="Z1w-CL-vba"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -26,10 +29,31 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="QPg-g0-2jP"/>
+                    <connections>
+                        <outlet property="Cell" destination="G97-hc-F8L" id="vlM-ZU-sjq"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pCH-YD-HHL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1588" y="1048"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="dIu-OJ-utI">
+            <objects>
+                <viewController id="IJs-e6-EXz" customClass="DetailViewController" customModule="ToDo_Lynda" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="94f-Km-k3M"/>
+                        <viewControllerLayoutGuide type="bottom" id="9WF-DR-zHY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gXv-XT-HUd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="edq-So-kDf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2274" y="1048"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="C7G-3A-Vzg">

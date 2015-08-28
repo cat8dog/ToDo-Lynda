@@ -14,6 +14,7 @@
 		287E6C7A1B8FA7070023D9C7 /* ToDo_LyndaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287E6C791B8FA7070023D9C7 /* ToDo_LyndaTests.swift */; };
 		287E6C841B8FA7FF0023D9C7 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287E6C831B8FA7FF0023D9C7 /* Note.swift */; };
 		287E6C861B8FB12F0023D9C7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287E6C851B8FB12F0023D9C7 /* TableViewController.swift */; };
+		287E6C881B90217C0023D9C7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287E6C871B90217C0023D9C7 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		287E6C791B8FA7070023D9C7 /* ToDo_LyndaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo_LyndaTests.swift; sourceTree = "<group>"; };
 		287E6C831B8FA7FF0023D9C7 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		287E6C851B8FB12F0023D9C7 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		287E6C871B90217C0023D9C7 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				287E6C631B8FA7070023D9C7 /* AppDelegate.swift */,
 				287E6C831B8FA7FF0023D9C7 /* Note.swift */,
 				287E6C851B8FB12F0023D9C7 /* TableViewController.swift */,
+				287E6C871B90217C0023D9C7 /* DetailViewController.swift */,
 				287E6C671B8FA7070023D9C7 /* Main.storyboard */,
 				287E6C6A1B8FA7070023D9C7 /* Images.xcassets */,
 				287E6C6C1B8FA7070023D9C7 /* LaunchScreen.xib */,
@@ -218,6 +221,7 @@
 				287E6C641B8FA7070023D9C7 /* AppDelegate.swift in Sources */,
 				287E6C861B8FB12F0023D9C7 /* TableViewController.swift in Sources */,
 				287E6C841B8FA7FF0023D9C7 /* Note.swift in Sources */,
+				287E6C881B90217C0023D9C7 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
