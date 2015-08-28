@@ -16,11 +16,13 @@ class TableViewController: UITableViewController {
         
         // test for checking to see if notes load
         Note.loadNotes()
-        println("allNotes: \(allNotes)")
+        println("allNotes: is \(allNotes)")
+        
         // create note
         var n:Note = Note()
+        
         // add it to the allNotes array
-        allNotes.append(n)
+        allNotes.addObject(n)
         Note.saveNotes()
         noteTable = self.tableView
         
